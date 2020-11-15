@@ -1,0 +1,158 @@
+.main {
+    background: #2f6f4e;
+    display: block;
+    background: url("./Components/imgs/Triangles-Background--Desktop.png"),linear-gradient(to bottom right, #2f6f4e, #02b159);
+    .main-content-wrapepr {
+        padding: 6rem 0;
+    }
+    .main-upper {
+        .heading {
+            text-align: center;
+            font-size: 3rem;
+            color: white;
+            font-weight: 600;
+            
+        }
+        .paragraph {
+            text-align: center;
+            color: white;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+        }
+    }
+
+
+
+    .email-form {
+        margin-top: 1rem;
+        .email-input {
+            background: white;
+            display: block;
+            width: 100%;
+            font-size: 18px;
+            padding: 1rem;
+            border-radius: 4px;
+                
+            
+        }
+        .signup {
+            display: block;
+            text-align: center;
+            font-size: 18px;
+            background: #02b159;
+            color: white;
+            padding: 1rem;
+            border-radius: 4px;
+            width: 100%;
+            margin-top: 1rem;
+            cursor: pointer;
+            &:hover {
+                background: #32363b;
+            }
+        }
+        .info {
+            margin-top: 1rem;
+            span {
+                color: white;
+                font-size: .9rem;
+                a {
+                    color: inherit;
+                    font-size: .9rem;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.linode {
+    position: relative;
+    &-cloud {
+        width: 95%;
+        margin: 0 auto;
+        display: block;
+    }
+    &-developer {
+        margin-top: 2rem;
+    }
+    &-backpack {
+        width: 7rem;
+        position: absolute;
+        bottom: 0;
+        right: -20px;
+    }
+}
+
+
+
+@media screen and (min-width:1024px) {
+    .main {
+        .main-content-wrapepr {
+            padding: 1rem 0;
+        }
+    }
+    .desktop-flexing {
+        display: flex;
+        margin-left: -1rem;
+        margin-right: -1rem;
+        &>div:first-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &>div {
+            flex: 0 0 50%;
+            padding: 1rem;
+        }
+        .main-upper {
+            .heading,.paragraph {
+                text-align: left;
+            }
+        }
+        .email-form {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .linode {
+            &-cloud {
+                width: 47%;
+                margin-bottom: -2px;
+                margin-left: auto;
+                display: block;
+            }
+            &-developer {
+                margin:0;
+                img {
+                    width: 77%;
+                    margin-left: auto;
+                    display: block;
+                }
+            }
+            
+        }
+    }
+
+    .email-form-wrapper {
+        flex: 0 0 100%;
+        display: flex;
+        margin-left: -.5rem;
+        margin-right: -.5rem;
+        .input-wrapper {
+            flex: 0 0 67%;
+            padding: .5rem;
+            .email-input {
+                font-size: 1rem;
+            }
+        }
+
+        .button-wrapper {
+            flex: 0 0 33%;
+            padding: .5rem;
+            .signup {
+                margin: 0;
+                font-size: 1rem;
+            }
+        }
+    }
+}

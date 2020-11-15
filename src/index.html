@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>webpack starterkit</title>
+</head>
+<body>
+  <header class="main-header">
+    <div class="desktop-nav-wrapper">
+      <div class="mobile-header-wrapper">
+        <div class="brand-wrapper">
+          <a href="/"><img src="./images/logo.svg" alt="brand logo"></a>
+        </div>
+        <button class="bars" id="menuToggler" data-open=false>
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <div class="mobileMenu hidden desktop-menu" id="main-navbar">
+        <div class="desktop-menu-content">
+          <nav class="uppernav">
+            <ul>
+              <li><a href="#">Why linode</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Solutions</a></li>
+              <li><a href="#">Marketplace</a></li>
+              <li><a href="#">Pricing list</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">About us</a></li>
+            </ul>
+          </nav>
+          <nav class="morenav">
+            <ul>
+              <li><a href="#">Docs</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact Sales</a></li>
+              <li><a href="#">Log In</a></li>
+              <li><a href="#">Press Center</a></li>
+            </ul>
+          </nav>
+          <div class="signup">
+            <a href="#">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="hide-helper">
+    <main>
+      <section class="main">
+        <div class="container">
+          <div class="main-content-wrapepr">
+              <div class="desktop-flexing">
+                <div>
+                  <div class="main-upper">
+                    <h1 class="heading">
+                      The Developer <br> Cloud Simplified
+                    </h1>
+                    <p class="paragraph">
+                      Simplify your cloud infrastructure with our Linux virtual machines and robust set of tools to develop, deploy, and scale your modern applications faster and easier.
+                    </p>
+                  </div>
+                  <form action="" class="email-form">
+                    <div class="email-form-wrapper">
+                      <div class="input-wrapper">
+                        <input type="email" placeholder="Email" class="email-input">
+                      </div>
+                      <div class="button-wrapper">
+                        <button type="submit" class="signup">
+                          Create Account
+                        </button>
+                      </div>
+                        
+                    </div>
+                    <div class="info">
+                      <p>
+                        <span>
+                            By signing up, you agree to the <a href="#">Terms of Service</a>.
+                        </span>
+                      </p>
+                    </div>
+                  </form>
+                </div>
+                <div class="linode">
+                  <div class="linode-cloud">
+                    <img src="./images/OBJ-Cloud-Offer-20.svg" alt="">
+                  </div>
+                  <div class="linode-developer">
+                    <img src="./images/Linode-Developer2.svg" alt="">
+                  </div>
+                  <div class="linode-backpack">
+                    <img src="./images/backpack.svg" alt="">
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section class="statistics-wrapper">
+        <div class="container">
+          <div class="-mx-20 md:m-0">
+            <ul class="statistics">
+              <li>
+                <div>
+                  800K+ 
+                  <span>Customers</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  11
+                  <span>Global market</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  2003
+                  <span>Founded</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  3
+                  <span>years before aws</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  100%
+                  <span>Independant</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="tabs-wrapper">
+          <div class="container">
+            <h2 class="heading">
+              Infrastructure for Innovation
+            </h2>
+            <p class="paragraph">Easily launch and enrich your developer applications, hosted services, websites, AI & machine learning workloads, gaming services, or CI/CD environments.
+            </p>
+            <ul class="tabs-nav" id="buttons-container">
+              <li><a class="tabs-nav-link active" data-target="Kubernetes" href="#">Kubernetes</a></li>
+              <li><a class="tabs-nav-link" data-target="Compute" href="#">Compute</a></li>
+              <li><a class="tabs-nav-link" data-target="Storage" href="#">Storage</a></li>
+              <li><a class="tabs-nav-link" data-target="Networking" href="#">Networking</a></li>
+              <li><a class="tabs-nav-link" data-target="Services" href="#">Services</a></li>
+              <li><a class="tabs-nav-link" data-target="Tools" href="#">Tools</a></li>
+              <li><a class="tabs-nav-link" data-target="Marketplace" href="#">Marketplace</a></li>
+            </ul>
+          </div>
+          <div class="container">
+            <!---->
+            <div class="main-tabs-container">
+              <div class="tab-item without-flexbox" id="Kubernetes">
+                <a href="#">
+                  <img class="image" src="./images/tabs/images/linode-icon-kubernetes-1.svg" alt="">
+                  <h4 class="heading">Kubernetes</h4>
+                  <p class="paragraph">Managed Kubernetes <br> clusters</p>
+                </a>
+              </div>
+              <div class="tab-item hidden" id="Compute">
+                <div class="flex-helper">
+                  <a href="#">
+                    <img class="image" src="./images/tabs/images/linode-icon-linodes-1.svg" alt="">
+                    <h4 class="heading">Shared</h4>
+                    <p class="paragraph">Balanced power and <br> performance</p>
+                  </a>
+                </div>
+                <div class="flex-helper">
+                  <a href="#">
+                  <img class="image" src="./images/tabs/images/linode-icon-dedicated-CPU-1.svg" alt="">
+                  <h4 class="heading">Dedicated CPU</h4>
+                  <p class="paragraph">For CPU-Intensive <br> applications</p>
+                </a>
+                </div>
+                <div class="flex-helper">
+                  <a href="#">
+                  <img class="image" src="./images/tabs/images/linode-icon-high-ram-instances-1.svg" alt="">
+                  <h4 class="heading">High Memory</h4>
+                  <p class="paragraph">Max Ram <br> configurations </p>
+                </a>
+                </div>
+                <div class="flex-helper">
+                  <a href="#">
+                  <img class="image" src="./images/tabs/images/linode-icon-gpu-1.svg" alt="">
+                  <h4 class="heading">GPU</h4>
+                  <p class="paragraph">Speed up complex <br> compute jobs </p>
+                </a>
+                </div>
+              </div>
+              <div class="tab-item hidden" id="Storage">
+                <div class="flex-helper">
+                  <a href="#">
+                    <img class="image" src="./images/tabs/images/linode-icon-block-storage-1.svg" alt="">
+                    <h4 class="heading">Shared</h4>
+                    <p class="paragraph">Balanced power and <br> performance</p>
+                  </a>
+                </div>
+                <div class="flex-helper">
+                  <a href="#">
+                  <img class="image" src="./images/tabs/images/linode-icon-object-storage-1.svg" alt="">
+                  <h4 class="heading">Dedicated CPU</h4>
+                  <p class="paragraph">For CPU-Intensive <br> applications</p>
+                </a>
+                </div>
+                <div class="flex-helper">
+                  <a href="#">
+                  <img class="image" src="./images/tabs/images/linode-icon-automatic-backups-1.svg" alt="">
+                  <h4 class="heading">High Memory</h4>
+                  <p class="paragraph">Max Ram <br> configurations </p>
+                </a>
+                </div>
+              </div>
+              <div class="tab-item hidden" id="Networking">
+                <div class="flex-helper">
+                  <a href="#">
+                    <img class="image" src="./images/tabs/images/icon-cloud-firewall-coming-soon-green.svg" alt="">
+                    <h4 class="heading">Shared</h4>
+                    <p class="paragraph">Balanced power and <br> performance</p>
+                  </a>
+                </div>
+                <div class="flex-helper">
+                  <a href="#">
+                  <img class="image" src="./images/tabs/images/advanced-ddos-2color.svg" alt="">
+                  <h4 class="heading">Dedicated CPU</h4>
+                  <p class="paragraph">For CPU-Intensive <br> applications</p>
+                </a>
+                </div>
+                <div class="flex-helper">
+                  <a href="#">
+                  <img class="image" src="./images/tabs/images/linode-icon-node-balancers-1.svg" alt="">
+                  <h4 class="heading">High Memory</h4>
+                  <p class="paragraph">Max Ram <br> configurations </p>
+                </a>
+                </div>
+                <div class="flex-helper">
+                  <a href="#">
+                  <img class="image" src="./images/tabs/images/linode-icon-dns-manager-1.svg" alt="">
+                  <h4 class="heading">High Memory</h4>
+                  <p class="paragraph">Max Ram <br> configurations </p>
+                </a>
+                </div>
+              </div>
+              <div class="tab-item hidden" id="Services">
+                <div class="flex-helper">
+                  <a href="#">
+                    <img class="image" src="./images/tabs/images/linode-icon-managed-services-1.svg" alt="">
+                    <h4 class="heading">Shared</h4>
+                    <p class="paragraph">Balanced power and <br> performance</p>
+                  </a>
+                </div>
+                <div class="flex-helper">
+                  <a href="#">
+                  <img class="image" src="./images/tabs/images/linode-icon-pro-services-1.svg" alt="">
+                  <h4 class="heading">Dedicated CPU</h4>
+                  <p class="paragraph">For CPU-Intensive <br> applications</p>
+                </a>
+                </div>
+              </div>
+              <div class="tab-item hidden" id="Tools">
+                <div class="flex-helper">
+                  <a href="#">
+                    <img class="image" src="./images/tabs/images/linode-icon-api.svg" alt="">
+                    <h4 class="heading">Shared</h4>
+                    <p class="paragraph">Balanced power and <br> performance</p>
+                  </a>
+                </div>
+                <div class="flex-helper">
+                  <a href="#">
+                  <img class="image" src="./images/tabs/images/linode-icon-cli-1.svg" alt="">
+                  <h4 class="heading">Dedicated CPU</h4>
+                  <p class="paragraph">For CPU-Intensive <br> applications</p>
+                </a>
+                </div>
+                <div class="flex-helper">
+                  <a href="#">
+                    <img class="image" src="./images/tabs/images/Cloud-Manager.svg" alt="">
+                    <h4 class="heading">Shared</h4>
+                    <p class="paragraph">Balanced power and <br> performance</p>
+                  </a>
+                </div>
+                <div class="flex-helper">
+                  <a href="#">
+                    <img class="image" src="./images/tabs/images/linode-icon-monitoring-1.svg" alt="">
+                    <h4 class="heading">Shared</h4>
+                    <p class="paragraph">Balanced power and <br> performance</p>
+                  </a>
+                </div>
+              </div>
+              <div class="tab-item hidden" id="Marketplace">
+                <div class="flex-helper">
+                  <a href="#">
+                    <img class="image" src="./images/tabs/images/linode-icon-one-click-apps-1.svg" alt="">
+                    <h4 class="heading">Shared</h4>
+                    <p class="paragraph">Balanced power and <br> performance</p>
+                  </a>
+                </div>
+              </div>
+          </div>
+          <div class="contianer">
+            <div>
+              <a class="exploreMore" href="#">Explore Products</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="developersLove">
+        <div class="container">
+          <div>
+            <h5 class="heading">A cloud experience developers love</h5>
+          </div>
+          <div class="video-container">
+            <div class="video-positioner">
+              <video id="review" width="100%" height="100%" autoplay="autoplay" loop muted="true">
+                <source src="./videos/CloudManager CreateLinode_Inline_720p.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="informations">
+        <div class="container">
+          <div class="more-info">
+            <div class="info-wrapper">
+              <a class="block" href="#">
+              <article>
+                <img src="./images/info/linode-splash-cloud-simplified-winning-support.svg" alt="">
+                <h6 class="heading">Award-Winning Support</h6>
+                <p class="paragraph">No tiers, no hand-offs, just highly trained service professionals who actually answer the phone and solve your issue 24/7/365.</p>
+              </article>
+              </a>
+            </div>
+            <div class="info-wrapper">
+              <a class="block" href="#">
+                <article>
+                  <img src="./images/info/linode-splash-standard-linodes-price-performance.svg" alt="">
+                  <h6 class="heading">Predictable Pricing </h6>
+                  <p class="paragraph">Always know what you will pay monthly with flat and transparent pricing across every data center.</p>
+                </article>
+              </a>
+              
+            </div>
+            <div class="info-wrapper">
+              <a class="block" href="#">
+              <article>
+                <img src="./images/info/linode-splash-what-is-cloud-computing-saas.svg" alt="">
+                <h6 class="heading">Cloud Simplified </h6>
+                <p class="paragraph">
+                  Easily manage and scale your infrastructure with our intuitive Cloud Manager, API/CLI, One-Click apps, and more. </p>
+              </article>
+              </a>
+            </div>
+          </div>
+          <div class="flex justify-center extra-links">
+            <a class="btn" href="#">Linode for Business</a>
+            <a class="btn" href="#">Solutions Partner Program</a>
+            <a class="btn" href="#">Linode vs AWS</a>
+          </div>
+        </div>
+      </section>
+      <section class="locations">
+        <div class="container">
+          <header>
+            <h6 class="heading">11 Global Markets</h6>
+            <p class="paragraph">The global data center reach and the local presence you need</p>
+          </header>
+          <ul class="locations-info">
+            <li><a href="#">Tokyo, Japan</a></li>
+            <li><a href="#">Mumbai, India</a></li>
+            <li><a href="#">Singapore, Singapore</a></li>
+            <li><a href="#">Sydney, Australia</a></li>
+            <li><a href="#">Frankfurt, Germany</a></li>
+            <li><a href="#">London, United Kingdom</a></li>
+            <li><a href="#">Toronto, Canada</a></li>
+            <li><a href="#">Newark, United States</a></li>
+            <li><a href="#">Atlanta, United States</a></li>
+            <li><a href="#">Dallas, United States</a></li>
+            <li><a href="#">Fremont, United States</a></li>
+          </ul>
+          <div class="map">
+            <img src="./images/linodeDCMapR4-scaled.png" alt="">
+          </div>
+          <div class="text-center">
+            <a href="#" class="speedtest">Run Speedtest</a>
+          </div>
+        </div>
+      </section>
+      <section>
+    
+         <blockquote class="quote"  cite="https://www.huxley.net/bnw/four.html">
+          <div class="container">
+          <p>"Linode gives us the advertised performance, a superior support experience, and the bandwidth we need for worldwide coverage—all for a great price."</p>
+          <footer>
+            Luke Seelenbinder, Co-Founder
+            <cite>Stadia Maps</cite>
+          </footer>
+         </div>
+         </blockquote>
+          
+    
+      </section>
+    
+      <section class="getstarted">
+        <div class="container">
+          <h6 class="heading">Get started today</h6>
+          <div>
+            <a class="btn" href="#">Create Free Account</a>
+            <a class="btn" href="#">View Pricing</a>
+          </div>
+          <a class="feedmoremore" href="#">See how Linode Cloud pricing compares</a>
+        </div>
+      </section>
+    </main>
+   
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-flexer">
+          <div class="flex-item">
+            <div class="brand-and-socialmedia">
+              <div class="brand-copy">
+                <a href="#">
+                  <img src="https://www.linode.com/wp-content/uploads/2018/10/linode-logo-blk-rgb-minified.svg" alt="brand logo">
+                <span>&copy; 2020 All rights reserved.</span>
+                </a>
+              </div>
+              <div class="social-links">
+                <nav>
+                  <ul>
+                    <li class="social-item">
+                      <a href="#" title="github link">
+                        <img src="./images/social-links/github-brands.svg" alt="github image">
+                      </a>
+                    </li>
+                    <li class="social-item">
+                      <a href="#" title="instagram link">
+                        <img src="./images/social-links/instagram-square-brands.svg" alt="Instagram image">
+                      </a>
+                    </li>
+                    <li class="social-item">
+                      <a href="#" title="Youtube link">
+                        <img src="./images/social-links/youtube-brands.svg" alt="Youtube image">
+                      </a>
+                    </li>
+                    <li class="social-item">
+                      <a href="#" title="Linkedin link">
+                        <img src="./images/social-links/linkedin-brands.svg" alt="Linkedin image">
+                      </a>
+                    </li>
+                    <li class="social-item">
+                      <a href="#" title="Twitter link">
+                        <img src="./images/social-links/twitter-brands.svg" alt="Twitter image">
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div>
+  
+            </div>
+          </div>
+          <div class="flex-item m-hidden">
+            <nav>
+              <p>Why Linode</p>
+              <ul class="list-group">
+                <li class="list-item"><a href="#">Choosing Linode</a></li>
+                <li class="list-item"><a href="#">Support Experience</a></li>
+                <li class="list-item"><a href="#">Predictable Pricing</a></li>
+                <li class="list-item"><a href="#">Cloud Simplified</a></li>
+                <li class="list-item"><a href="#">Global Infrastructure</a></li>
+                <li class="list-item"><a href="#">Customer Stories</a></li>
+                <li class="list-item"><a href="#">Linode for Business</a></li>
+                <li class="list-item"><a href="#">Alternative Cloud</a></li>
+                <li class="list-item"><a href="#">Linode vs. AWS</a></li>
+                <li class="list-item"><a href="#">Open Cloud</a></li>
+                <li class="list-item"><a href="#">What is Cloud Computing?</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="flex-item m-hidden">
+            <nav>
+              <p>Products</p>
+              <ul class="list-group">
+                <li class="list-item"><a href="#">Products Overview</a></li>
+                <li class="list-item"><a href="#">Shared</a></li>
+                <li class="list-item"><a href="#">Dedicated CPU</a></li>
+                <li class="list-item"><a href="#">High Memory</a></li>
+                <li class="list-item"><a href="#">GPU</a></li>
+                <li class="list-item"><a href="#">Bare Metal</a></li>
+                <li class="list-item"><a href="#">Kubernetes</a></li>
+                <li class="list-item"><a href="#">Block Storage</a></li>
+                <li class="list-item"><a href="#">Object Storage</a></li>
+                <li class="list-item"><a href="#">Backups </a></li>
+                <li class="list-item"><a href="#">Cloud Firewall</a></li>
+                <li class="list-item"><a href="#">DDoS Protection</a></li>
+                <li class="list-item"><a href="#">DNS Manager</a></li>
+                <li class="list-item"><a href="#">NodeBalancers</a></li>
+                <li class="list-item"><a href="#">VLAN</a></li>
+                <li class="list-item"><a href="#">Managed</a></li>
+                <li class="list-item"><a href="#">Professional Services</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="flex-item f-m m-hidden">
+            <nav>
+              <p>Solutions</p>
+              <ul class="list-group">
+                <li class="list-item"><a href="#">Solutions Overview</a></li>
+      
+              </ul>
+            </nav>
+            <nav>
+              <p>Marketplace</p>
+              <ul class="list-group">
+                <li class="list-item"><a href="#">Browse Marketplace</a></li>
+                <li class="list-item"><a href="#">Submit Marketplace App</a></li>
+                
+              </ul>
+            </nav>
+            <nav>
+              <p>Pricing</p>
+              <ul class="list-group">
+                <li class="list-item"><a href="#">Pricing List</a></li>
+                <li class="list-item"><a href="#">Cloud Estimator</a></li>
+                <li class="list-item"><a href="#">TCO Calculator</a></li>
+      
+              </ul>
+            </nav>
+            <nav>
+              <p>Company</p>
+              <ul class="list-group">
+                <li class="list-item"><a href="#">About</a></li>
+                <li class="list-item"><a href="#">Leadership</a></li>
+                <li class="list-item"><a href="#">Partners</a></li>
+                <li class="list-item"><a href="#">Press Center</a></li>
+                <li class="list-item"><a href="#">Careers</a></li>
+                <li class="list-item"><a href="#">Legal</a></li>
+                <li class="list-item"><a href="#">Subscription Center</a></li>
+               
+              </ul>
+            </nav>
+          </div>
+          <div class="flex-item m-hidden">
+            <nav>
+              <p>Community
+              </p>
+              <ul class="list-group">
+                <li class="list-item"><a href="#">Community Overview</a></li>
+                <li class="list-item"><a href="#">Q&A</a></li>
+                <li class="list-item"><a href="#">Developer Portal</a></li>
+                <li class="list-item"><a href="#">Beta Program</a></li>
+                <li class="list-item"><a href="#">Blog</a></li>
+                <li class="list-item"><a href="#">Events</a></li>
+                <li class="list-item"><a href="#">Content Resources</a></li>
+                <li class="list-item"><a href="#">Linode Video Channel</a></li>
+                <li class="list-item"><a href="#">Affiliate Program</a></li>
+                <li class="list-item"><a href="#">Customer Referral Program</a></li>
+                <li class="list-item"><a href="#">Swag Store</a></li>
+                <li class="list-item"><a href="#">Cloud Manager</a></li>
+                <li class="list-item"><a href="#">API</a></li>
+                <li class="list-item"><a href="#">Documentation</a></li>
+                <li class="list-item"><a href="#">Distributions</a></li>
+                <li class="list-item"><a href="#">Cloud Computing Terms</a></li>
+      
+              </ul>
+            </nav>
+          </div>
+          <div class="flex-item f-m m-hidden">
+            <nav>
+              <p>Contact</p>
+              <ul class="list-group">
+                <li class="list-item"><a href="#">Support</a></li>
+                <li class="list-item"><a href="#">Contact Sales</a></li>
+                <li class="list-item"><a href="#">System Status</a></li>
+                <li class="list-item"><a href="#">Log in</a></li>
+      
+              </ul>
+            </nav>
+            <nav>
+              <p>Follow Us </p>
+              <ul class="list-group">
+                <li class="list-item"><a href="#">Twitter</a></li>
+                <li class="list-item"><a href="#">Instagram</a></li>
+                <li class="list-item"><a href="#">Youtube</a></li>
+                <li class="list-item"><a href="#">Linkedin</a></li>
+                <li class="list-item"><a href="#">Github</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        
+       
+        
+        
+       
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
