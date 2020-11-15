@@ -1,27 +1,23 @@
 {
-  "name": "webpack-starter",
+  "name": "linode-clone",
   "version": "1.0.0",
-  "description": "A light foundation for your next frontend project based on webpack.",
+  "description": "linode landing page clone",
   "scripts": {
-    "lint": "npm run lint:styles; npm run lint:scripts",
-    "lint:styles": "stylelint src",
-    "lint:scripts": "eslint src",
     "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js --colors",
     "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wbkd/webpack-starter.git"
+    "url": "git+https://github.com/mehdiFa-web/linode-clone.git"
   },
   "keywords": [
     "webpack",
     "startkit",
     "frontend",
     "es6",
-    "javascript",
-    "webdev"
+    "javascript"
   ],
-  "author": "webkid.io",
+  "author": "mehdi el fatihi",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/wbkd/webpack-starter/issues"
